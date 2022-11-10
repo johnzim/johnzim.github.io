@@ -26,7 +26,11 @@ function useTeamMember() {
   return [
     teamMember,
     () => {
-      setTeamMember(getRandomTeamMember());
+      let newTeamMember = getRandomTeamMember();
+      while (newTeamMember.name === teamMember.name) {
+        newTeamMember = getRandomTeamMember();
+      }
+      setTeamMember(newTeamMember);
     },
   ];
 }

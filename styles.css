@@ -1,9 +1,33 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Open sans';
 }
 
 h1, h2, h3 {
   font-family: 'Montserrat';
+}
+
+button {
+  background-color: #333333;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  padding: 0.375rem 1.5rem 0.375rem 1.5rem;
+  border: 0.125rem solid #333333;
+  border-radius: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  box-shadow: none;
 }
 
 .main-container {
@@ -23,6 +47,7 @@ h1, h2, h3 {
 
 .team-member-name {
   color: black;
+  font-size: 1.5rem;
 }
 
 .team-member-face {
@@ -33,6 +58,7 @@ h1, h2, h3 {
   animation-iteration-count: infinite;
   animation-direction: repeat;
   animation-timing-function: linear;
+  margin-bottom: 1rem;
 }
 
 @keyframes tilt {

@@ -50,7 +50,11 @@ function useTeamMember() {
       setTeamMember = _useState2[1];
 
   return [teamMember, function () {
-    setTeamMember(getRandomTeamMember());
+    var newTeamMember = getRandomTeamMember();
+    while (newTeamMember.name === teamMember.name) {
+      newTeamMember = getRandomTeamMember();
+    }
+    setTeamMember(newTeamMember);
   }];
 }
 
