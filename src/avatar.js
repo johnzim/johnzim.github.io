@@ -29,6 +29,7 @@ function useTeamMember() {
     () => {
       let newTeamMember = getRandomTeamMember();
       while (newTeamMember.name === teamMember.name) {
+        console.log('reroll name for dupe')
         newTeamMember = getRandomTeamMember();
       }
       setTeamMember(newTeamMember);
