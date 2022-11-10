@@ -54,6 +54,7 @@ button:active {
 .team-member-face {
   padding: 2rem;
   width: 50vw;
+  max-width: 30rem;
   animation-duration: 2s;
   animation-name: tilt;
   animation-iteration-count: infinite;
