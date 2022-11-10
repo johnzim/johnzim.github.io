@@ -20,6 +20,11 @@ var Avatar = function Avatar() {
     "div",
     { className: 'container' },
     React.createElement(
+      "h1",
+      null,
+      "Who Am I?"
+    ),
+    React.createElement(
       "h2",
       null,
       "Your Team Member is:"

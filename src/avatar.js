@@ -7,6 +7,7 @@ const Avatar = () => {
   const [teamMember, resetTeamMember] = useTeamMember();
   return (
     <div className={'container'}>
+    <h1>Who Am I?</h1>
       <h2>Your Team Member is:</h2>
       <p className="team-member-name">{teamMember.name}</p>
       <img className="team-member-face" src={teamMember.face} />
