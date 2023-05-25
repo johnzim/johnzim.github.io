@@ -16,5 +16,3 @@ export const TEAM = [
   { name: "Jordan", face: "/img/jordan.png" },
   { name: "Jasper", face: "/img/jasper.png" },
 ];
-  //{ name: "Juan Manuel", face: "/img/juan-manuel.png" },
-  //{ name: "Matthew", face: "/img/matthew.png" },
